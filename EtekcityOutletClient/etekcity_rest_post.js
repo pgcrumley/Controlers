@@ -44,10 +44,11 @@ if (process.argv.length != 6) {
 var address = parseInt(process.argv[3]);
 var unit = parseInt(process.argv[4]);
 var action = process.argv[5];
-var postData = JSON.stringify({"address" : address,
-                "unit" : unit, 
-                "action" : action
-                });
+var postData = JSON.stringify({
+    "address" : address,
+    "unit" : unit, 
+    "action" : action
+});
 
 var thisUrl = new url.parse(process.argv[2]);
 var options = {
@@ -61,8 +62,6 @@ var options = {
             'Content-Length' : Buffer.byteLength(postData)
         }
 }
-
-console.log(postData);
 
 var req = http.request(options, function (res) {
     var chunks = [];
