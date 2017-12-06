@@ -126,11 +126,13 @@ class Simple_RequestHandler(BaseHTTPRequestHandler):
         self.send_header('Content-Type','application/json')
         self.end_headers()
 
-        result = {}
-        result["id"] = ID
-        result["parameter"] = PARAMETER
-        result['value'] = random.random()
-
+        result = []
+        sample = {}
+        sample["id"] = ID
+        sample["parameter"] = PARAMETER
+        sample['value'] = random.random()
+        result.append(sample)
+        
         self.wfile.write(bytes(json.dumps(result, indent=1)+'\n', "utf8"))
         return
     
