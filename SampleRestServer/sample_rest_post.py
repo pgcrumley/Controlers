@@ -96,6 +96,6 @@ if '__main__' == __name__:
 
     print('Status Code is {}'.format(response.status_code))
     if response.status_code == 200:
-        print('JSON: {}'.format(json.loads(response.text)))
+        print('{}'.format(json.loads(response.text)))
     else:
-        print('Text: "{}"'.format(response.text))
+        print('"{}"'.format(response.text))
