@@ -41,7 +41,7 @@ Copy what is reused with
 Then go to the directory and retrieve the program with
 
     cd tjbot_controls_devices
-    curl curl https://github.com/pgcrumley/Examples/blob/master/TJBot_Controls_Outlets/tjbot_controls_outlets.js > tjbot_controls_outlets.js
+    curl curl https://raw.githubusercontent.com/pgcrumley/Examples/master/TJBot_Controls_Outlets/tjbot_controls_outlets.js > tjbot_controls_outlets.js
 
 #### Configure the device address
 
