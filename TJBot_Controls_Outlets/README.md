@@ -8,6 +8,10 @@ The devices are controlled using the
 controller.  Once you have the outlet controller working and have installed
 the optional REST controller you are ready to let TJBot take over.
 
+Here is an example of what you can do with this recipe:
+
+[![TJBot can control electrical devices](https://img.youtube.com/vi/sVOzujiDN_Q/0.jpg)](https://www.youtube.com/watch?v=sVOzujiDN_Q "TJBot can control electrical devices")
+
 This extends the `speech_to_text` recipe that comes with the TJBot
 code from [IBM Research](http://www.research.ibm.com/).  Make sure you 
 have the `speech_to_text` project running before you install this 
